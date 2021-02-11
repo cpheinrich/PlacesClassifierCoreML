@@ -1,3 +1,11 @@
+# Places classifier with Core ML
+
+This repo contains sample code and trained models for classifying places with a neural network on the Places dataset http://places.csail.mit.edu/index.html.
+
+This project was originally forked from https://github.com/chenyi1989/CoreMLDemo. Their original readme is below
+
+
+
 # CoreMLDemo
 A demo for iOS machine learning framework : Core ML
 
