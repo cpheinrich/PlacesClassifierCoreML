@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B2A6F75725D4D69500239928 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B2A6F75625D4D69500239928 /* GoogLeNetPlaces.mlmodel */; };
-		B2A6F75B25D5C13F00239928 /* GoogLeNetPlaces_8bit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B2A6F75A25D5C13F00239928 /* GoogLeNetPlaces_8bit.mlmodel */; };
-		B2A6F75E25D5C7F300239928 /* GoogLeNetPlaces_16bit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B2A6F75D25D5C7F300239928 /* GoogLeNetPlaces_16bit.mlmodel */; };
+		B2A6F75E25D5C7F300239928 /* GoogLeNetPlaces16bit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B2A6F75D25D5C7F300239928 /* GoogLeNetPlaces16bit.mlmodel */; };
+		B2A6F77225D603A900239928 /* GoogLeNetPlaces8bit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B2A6F77125D603A900239928 /* GoogLeNetPlaces8bit.mlmodel */; };
 		E5E25CED1EE8EFEB0063E2EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E25CEC1EE8EFEB0063E2EA /* AppDelegate.m */; };
 		E5E25CF01EE8EFEB0063E2EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E25CEF1EE8EFEB0063E2EA /* ViewController.m */; };
 		E5E25CF31EE8EFEB0063E2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E25CF11EE8EFEB0063E2EA /* Main.storyboard */; };
@@ -21,8 +21,8 @@
 
 /* Begin PBXFileReference section */
 		B2A6F75625D4D69500239928 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
-		B2A6F75A25D5C13F00239928 /* GoogLeNetPlaces_8bit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces_8bit.mlmodel; sourceTree = "<group>"; };
-		B2A6F75D25D5C7F300239928 /* GoogLeNetPlaces_16bit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces_16bit.mlmodel; sourceTree = "<group>"; };
+		B2A6F75D25D5C7F300239928 /* GoogLeNetPlaces16bit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces16bit.mlmodel; sourceTree = "<group>"; };
+		B2A6F77125D603A900239928 /* GoogLeNetPlaces8bit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces8bit.mlmodel; sourceTree = "<group>"; };
 		E5E25CE81EE8EFEB0063E2EA /* CoreMLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E25CEB1EE8EFEB0063E2EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5E25CEC1EE8EFEB0063E2EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				B2A6F75625D4D69500239928 /* GoogLeNetPlaces.mlmodel */,
-				B2A6F75A25D5C13F00239928 /* GoogLeNetPlaces_8bit.mlmodel */,
-				B2A6F75D25D5C7F300239928 /* GoogLeNetPlaces_16bit.mlmodel */,
+				B2A6F77125D603A900239928 /* GoogLeNetPlaces8bit.mlmodel */,
+				B2A6F75D25D5C7F300239928 /* GoogLeNetPlaces16bit.mlmodel */,
 				E5E25CEB1EE8EFEB0063E2EA /* AppDelegate.h */,
 				E5E25CEC1EE8EFEB0063E2EA /* AppDelegate.m */,
 				E5E25CEE1EE8EFEB0063E2EA /* ViewController.h */,
@@ -167,10 +167,10 @@
 			files = (
 				E5E25CF01EE8EFEB0063E2EA /* ViewController.m in Sources */,
 				B2A6F75725D4D69500239928 /* GoogLeNetPlaces.mlmodel in Sources */,
-				B2A6F75B25D5C13F00239928 /* GoogLeNetPlaces_8bit.mlmodel in Sources */,
 				E5E25CFB1EE8EFEB0063E2EA /* main.m in Sources */,
-				B2A6F75E25D5C7F300239928 /* GoogLeNetPlaces_16bit.mlmodel in Sources */,
+				B2A6F75E25D5C7F300239928 /* GoogLeNetPlaces16bit.mlmodel in Sources */,
 				E5E25CED1EE8EFEB0063E2EA /* AppDelegate.m in Sources */,
+				B2A6F77225D603A900239928 /* GoogLeNetPlaces8bit.mlmodel in Sources */,
 				E5E25D071EE8F4300063E2EA /* UIImage+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UXR84JJ942;
 				INFOPLIST_FILE = CoreMLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.org.chenyi.CoreMLDemo;
@@ -313,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UXR84JJ942;
 				INFOPLIST_FILE = CoreMLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.org.chenyi.CoreMLDemo;
